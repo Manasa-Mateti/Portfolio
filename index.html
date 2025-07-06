@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cef9c3485b.js" crossorigin="anonymous"></script>
+    
+    <!--- icon script tag here-->
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+        <img src="images/logo2.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Activities</a></li>
+                <li><a href="#portfolio">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer & AI/ML Engineer</p>
+            <h3>Hi, I'm <span> Manasa Mateti </span></h3>
+
+        </div>
+    </div>
+ </div>
+<!------------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="images/My_photo.jpg">
+            </div>
+            <div class="about-col-2"> 
+                <h1 class="sub-title" >About Me</h1>
+                <p>Motivated and enthusiastic software Developer with a strong foundation in hands-on experience and projects.Iam passionate about problem-solving and continuously upgrading to grow both personally and professionally.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('education')" >Education</p>
+                    <p class="tab-links" onclick="opentab('projects')" >Projects</p>
+                    <p class="tab-links" onclick="opentab('certifications')" >Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                           <li><span>Programming Languages</span><br>Java, Python, C, C++</li>
+                           <li><span>Technical Skills</span><br>AI, ML, DS, GitHub </li>
+                           <li><span>Web Technologies</span><br>HTML, CSS, JavaScript, SQL, RDBMS, MERN Stack</li>
+                           <li><span>Developer tools</span><br>GIT, VSCode, Jupyter Notebook, Eclipse.</li>
+                           <li><span>Soft Skills</span><br>Efficient Communication,<br>Problem Solving, Time Management, <br>best Team work and Collaboration</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                           <li><span>2022-Present</span><br>Chaitanya Deemed to be University. <br>Btech in Computer Science and Engineering - 9.8 CGPA</li>
+                           <li><span>2020-2022</span><br>Krishnaveni Junior College. <br>Intermediate - 97.7 % </li>
+                           <li><span>2020</span><br>St.Amen High School.<br>SSC - 10 GPA</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                           <li><span>Attendance Management System Using Face Recognition.</span><br>1) Designed and developed a Machine-Learning-based attendance management system using python and openCV to automate tracking and reduce human error.  <br><br>
+                           2) Improved Accuracy by 98% using a trained facial recognition model  for corporate and educational institutions.</li>
+                           <li><span>Portfolio Website</span><br>1) Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and experience. 
+                            <br><br>2) Designed a responsive and interactive UI with smooth animations to enhance user engagement. Implemented a projects gallery, an "About Me" section, and a contact form with social media integration. Ensured cross-device compatibility and optimized performance for a seamless browsing experience. </li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                           <li><span>Infosys Springboard</span><br>java Concept<a href="images/Infosys-java concepts.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            Artificial Intelligence. <a href="images/Infosys-Artificial Intelligence.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                             Machine Learning. <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            Data science. <a href="images/Infosys- Data science.jpeg"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            Python for Data science<a href="images/Python for data science.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> </li>
+
+                           <li><span>IBM</span><br>Java Fundamentals. <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/ec6d3ab1fa23402e82859e63d0374be6"><i class="fa-solid fa-arrow-up-right-from-square"></a></i><br>
+                            Introduction to Python. <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/6564ae1028c8461e81dd20004855541b"><i class="fa-solid fa-arrow-up-right-from-square"></a></i><br>
+                            RDBMS. <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/5b7d31bdfc434a6c960e38bdd14b346c"><i class="fa-solid fa-arrow-up-right-from-square"></a></i>
+
+                           <li><span>Cisco Networking Academy</span><br>Networking Basics. <a href="images/Cisco.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></a></i><br>
+                            Python Essentials. <a href="images/Cisco_PythonEssentials.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></a></i><br>
+                           
+
+                           <li><span>Scalar</span><br>Java Course - Mastering the Fundamentals.<a href="images/ScalarJava.png"><i class="fa-solid fa-arrow-up-right-from-square"></a></i>
+
+                           <li><span>professional Development</span><br>Building Creative Confidence<a href="images/Infosys-Building_Creative_Confidence.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>   
+                            Effective Team Communication <a href="images/Infosys-Effective_team_communication.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>     
+                            Improving Your Reading Speed And Comprehension<a href="images/Infosys-Improving_your_ReadingSpeedAndComprehension.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            Time Management<a href="images/Infosys-Time_Management.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            Unleashing Your Self-confidence<a href="images/Infosys-Unleashing_your_self-confidence.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            Personality Development<a href="images/Infosys-Personality_Development.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            Email Writing Skills<a href="images/Infosys-Email_writingSkills.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            High Impact Presentation<a href="images/Infosys-High_Impact_Presentation.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right_from-square"></i></a><br>
+
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!---------Activities------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" >My Activities</h1> 
+        <div class="services-list">
+            <div>
+                <!---add icon here-->
+                <h2>Infosys SpringBoard</h2>
+                <p><h3>Infosys SpringBoard program:Pragati-Path To Future Cohort-5.</h3> <br> Focusing on enhancing skills in AI , ML , DS and Industry Relevent Skills.</p>
+                <a href="#">Learn more </a>
+            </div>
+            <div>
+                 <!---add icon here-->
+                <h2>NxtWave</h2>
+                <p><h3> "AI for Students:Build Your Own Generative AI Model.</h3><br>Attended AI Workshop and successfully completed the hands-on project.</p>
+                <a href="images/NxtWave.jpg">Learn more</a>
+            </div>
+            <div>
+                <!---add icon here-->
+               <h2>Lets Upgrade</h2>
+               <p><h3>Git & GitHub Bootcamp.</h3><br> Completed a comprehensive bootcamp on Git & GitHub, focusing on version control and collaboration.</p>
+               <a href="images/git-github.jpg">Learn more</a>
+           </div>
+           <div>
+            <!---add icon here-->
+           <h2>Lets Upgrade</h2>
+           <p><h3>Python Bootcamp.</h3><br> Completed a amazing bootcamp on Python, gaining hands-on experience in core Python programming.</p>
+           <a href="images/Python-letsUpgrade.jpg">Learn more</a>
+       </div>
+       <div>
+            <!---add icon here-->
+           <h2>Full Stack Event Organizer</h2>
+           <p> Organized a Full Stack web development Event as a part of Technovista Program held at Chaitanya Deemed To Be University.</p>
+           <a href="images/Event_Organizer.jpg">Learn more</a>
+       </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work Experience </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/poditivity logo (2).jpeg">
+                <div class="layer">
+                    <h3>Poditivity Company. [Nov2023-Apr2024] <br>Backened Intern.</h3>
+                    <p>Designed and optimised relational databases using RDBMS, improving query execution time by 30% and ensuring data integrity.</p>
+                    <a href="images/Poditivity_internship.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/aicte-cat.gif">
+                <div class="layer">
+                    <h3>Microsoft & SAP(AICTE)-[Nov2024-jan2025]<br>Machine Learning model for Image Classification. </h3>
+                    <p>Implemented a ML model for image classification using CNNs with 97% accuracy.</p>
+                    <a href="images/Aicte-image.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/chatbot.webp">
+                <div class="layer">
+                    <h3>Chatbot implementation using NLP <br>[Jan2025 - Feb2025]</h3>
+                    <p>Implemented a chatbot using NLP to faciliate automated, intelligent conversations.Improving user interaction by 98%.</p>
+                    <a href="images/aicte-chatbotc.jpeg"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/E-commerce.jpg">
+                <div class="layer">
+                    <h3>EY Global delivery services [Mar2025-Apr2025]<br>Custom E-Commerce Website Using MERN stack. </h3>
+                    <p>Developed a fully functional E-commerce Online Shopping website.</p>
+                    <a href="images/Certificate_EY.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/CamelQ_java.jpg">
+                <div class="layer">
+                    <h3>CamelQ Software Solutions [Apr2025-Present]<br>Custom E-Commerce Website Using MERN stack. </h3>
+                    <p>Currently working as a java Application Development Intern.</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+          
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!--------------contact------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>  manasamateti110@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>  6300548477</p>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/manasa_srinivas110?igsh"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/manasa-mateti-6655bb304"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Manasa-Mateti"><i class="fab fa-github"></i></a>    
+              </div>
+              <a href="images/Manasa Mateti - Resume.pdf" download class="btn btn2" >Download Resume </a>
+            </div>
+            <div class="contact-right"> 
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                 <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @Manasa Mateti. </p>
+    </div>
+</div>
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+
+    }
+    
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+        
+    }
+  </script> 
+  
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxfZnNJikrJ3mz18SPAfwpWMcPBSIqf7czFOF7Hv8N7kAGCSW_B4kpM6BsGuGeN2mgxdA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+                  msg.innerHTML="Message sent successfully!"
+                  setTimeout(function(){
+                    msg.innerHTML = ""
+                  },5000)
+                  form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<!-----Name Display----->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const nameText = "Manasa  Mateti";  // Your Name
+        const nameContainer = document.getElementById("animated-name");
+
+        function animateName() {
+            nameContainer.innerHTML = "";  // Clear existing text
+            nameText.split("").forEach((letter, index) => {
+                let span = document.createElement("span");
+                span.textContent = letter;
+                span.classList.add("letter");
+                span.style.animationDelay = `${index * 0.2}s`; // Delay each letter
+                nameContainer.appendChild(span);
+            });
+        }
+
+        animateName();  // Run animation on page load
+    });
+
+
+</script>
+
+</body>
+</html>
